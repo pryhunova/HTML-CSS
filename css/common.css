@@ -1,0 +1,100 @@
+:root {
+	--white-color: #fff;
+	--dark-color: #2e2f42;
+	--iris-color: #4d5ae5;
+	--ocean-color: #404bbf;
+	--accent-color: #e7e9fc;
+	--cloud-color: #f4f4fd;
+	--success-color: #31d0aa;
+	--text-color: #434455;
+	--subtitle-color: #8e8f99;
+	--modal-overlay-color: #2e2f42;
+	--hero-bkg-color: #2e2f42;
+	--modal-bkg-color: #fcfcfc;
+}
+body {
+	margin: 0;
+	padding: 0;
+	background-color: var(--white-color);
+
+	font-family: Roboto, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.32px;
+}
+.is-hidden {
+	margin: 0;
+	padding: 0;
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+}
+.list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.link {
+	font-size: 12px;
+	line-height: 16px;
+	letter-spacing: 0.64px;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+}
+.section-title {
+	font-size: 36px;
+	font-weight: 700;
+}
+.subtitle {
+	font-size: 20px;
+	font-weight: 500;
+}
+.small {
+	font-size: 12px;
+	line-height: 14px;
+	letter-spacing: 0.64px;
+}
+
+.header,
+.nav,
+.address-list {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+/* Navigation */
+.nav-list {
+	display: flex;
+}
+.nav-item > .link:hover,
+.nav-item > .link:focus {
+	text-decoration: underline;
+	color: var(--ocean-color);
+}
+
+/* Logo */
+.logo {
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.logo-prim {
+	color: var(--iris-color);
+}
+.logo-light {
+	color: var(--cloud-color);
+}
+.logo-dark {
+	color: var(--dark-color);
+}
+
+/* Footer */
+.footer {
+	background-color: var(--dark-color);
+	color: var(--cloud-color);
+}
+.footer > logo-item-2 {
+	color: var(--cloud-color);
+}
