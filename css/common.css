@@ -21,6 +21,17 @@ body {
 	font-size: 16px;
 	line-height: 24px;
 	letter-spacing: 0.32px;
+	color: var(--text-color);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+	padding: 0;
 }
 .is-hidden {
 	margin: 0;
@@ -29,8 +40,14 @@ body {
 	visibility: hidden;
 	position: absolute;
 }
-.list {
-	list-style: none;
+a {
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+}
+ul,
+ol {
+	list-style-type: none;
 	margin: 0;
 	padding: 0;
 }
@@ -38,22 +55,35 @@ body {
 	font-size: 12px;
 	line-height: 16px;
 	letter-spacing: 0.64px;
-	text-decoration: none;
-	margin: 0;
-	padding: 0;
 }
 .section-title {
 	font-size: 36px;
 	font-weight: 700;
+	text-align: center;
+	color: var(--dark-color);
 }
 .subtitle {
 	font-size: 20px;
-	font-weight: 500;
+	font-weight: 600;
+	color: var(--dark-color);
 }
-.small {
-	font-size: 12px;
-	line-height: 14px;
-	letter-spacing: 0.64px;
+.medium {
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 24px;
+}
+.text-dark {
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.32px;
+	color: var(--text-color);
+	font-style: normal;
+}
+.text-light {
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.32px;
+	color: var(--cloud-color);
 }
 
 .header,
@@ -64,23 +94,19 @@ body {
 	justify-content: space-between;
 }
 
-/* Navigation */
-.nav-list {
-	display: flex;
-}
-.nav-item > .link:hover,
-.nav-item > .link:focus {
-	text-decoration: underline;
-	color: var(--ocean-color);
-}
-
 /* Logo */
 .logo {
 	font-size: 18px;
 	font-weight: 700;
 	text-transform: uppercase;
+	display: inline-block;
+	transition: transform 0.3s ease-in-out;
 }
-.logo-prim {
+
+.logo:hover {
+	transform: scale(1.1);
+}
+.logo-primary {
 	color: var(--iris-color);
 }
 .logo-light {
@@ -89,12 +115,33 @@ body {
 .logo-dark {
 	color: var(--dark-color);
 }
+/* Navigation */
+.nav-list {
+	display: flex;
+}
+.nav-link {
+	color: var(--dark-color);
+}
+.nav-item > .link:hover,
+.nav-item > .link:focus {
+	color: var(--ocean-color);
+}
+
+/* Address */
+.address-item a:hover,
+.address-item a:focus {
+	color: var(--ocean-color);
+}
 
 /* Footer */
 .footer {
+	display: flex;
 	background-color: var(--dark-color);
 	color: var(--cloud-color);
 }
 .footer > logo-item-2 {
 	color: var(--cloud-color);
+}
+.footer-logo {
+	width: 264px;
 }

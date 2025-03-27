@@ -15,9 +15,23 @@
 	background-color: var(--ocean-color);
 }
 
-/* Address */
-
 /* Hero */
+.hero {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	/* height: 100vh; Занимает всю высоту экрана */
+	text-align: center;
+	background-color: var(--hero-bkg-color);
+}
+.hero-title {
+	text-align: center;
+	font-weight: 700;
+	font-size: 56px;
+	line-height: 60px;
+	color: var(--white-color);
+}
 
 /* Advantages */
 .advantages-list {
@@ -25,7 +39,7 @@
 }
 /* Team */
 .team {
-	background-color: var(--light-color);
+	background-color: var(--cloud-color);
 }
 .team-list {
 	display: flex;
