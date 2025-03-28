@@ -1,3 +1,13 @@
+/* Main styles */
+html {
+	box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
 :root {
 	--white-color: #fff;
 	--dark-color: #2e2f42;
@@ -57,6 +67,7 @@ ol {
 	letter-spacing: 0.64px;
 }
 .section-title {
+	margin-bottom: 80px;
 	font-size: 36px;
 	font-weight: 700;
 	text-align: center;
@@ -85,63 +96,8 @@ ol {
 	letter-spacing: 0.32px;
 	color: var(--cloud-color);
 }
-
-.header,
-.nav,
-.address-list {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
-
-/* Logo */
-.logo {
-	font-size: 18px;
-	font-weight: 700;
-	text-transform: uppercase;
-	display: inline-block;
-	transition: transform 0.3s ease-in-out;
-}
-
-.logo:hover {
-	transform: scale(1.1);
-}
-.logo-primary {
-	color: var(--iris-color);
-}
-.logo-light {
-	color: var(--cloud-color);
-}
-.logo-dark {
-	color: var(--dark-color);
-}
-/* Navigation */
-.nav-list {
-	display: flex;
-}
-.nav-link {
-	color: var(--dark-color);
-}
-.nav-item > .link:hover,
-.nav-item > .link:focus {
-	color: var(--ocean-color);
-}
-
-/* Address */
-.address-item a:hover,
-.address-item a:focus {
-	color: var(--ocean-color);
-}
-
-/* Footer */
-.footer {
-	display: flex;
-	background-color: var(--dark-color);
-	color: var(--cloud-color);
-}
-.footer > logo-item-2 {
-	color: var(--cloud-color);
-}
-.footer-logo {
-	width: 264px;
+.container {
+	max-width: 1160px;
+	margin: 0 auto;
+	padding: 0 15px;
 }
